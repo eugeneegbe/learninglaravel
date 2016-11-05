@@ -14,4 +14,16 @@
 Route::get('/', function () {
 
     return 'Hello welcome to my first app';
+
+});
+
+Route::get('/about' , function (){
+
+    return " This is our About Page";
+
+});
+
+Route::get('/contact' , function (){
+
+    return "This is Our contact Page";
 });
