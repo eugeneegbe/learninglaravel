@@ -13,14 +13,13 @@
 
 Route::get('/', function () {
 
-    return 'Hello welcome to my first app';
-
+   return View::make('home');
+    
 });
 
 Route::get('/about' , function (){
 
-    return " This is our About Page";
-
+    return View::make('about');
 });
 
 Route::get('/contact' , function (){
