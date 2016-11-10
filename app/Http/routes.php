@@ -13,6 +13,7 @@
 
 Route::get('/', function () {
 
+
    return View::make('home');
     
 });
@@ -24,5 +25,23 @@ Route::get('/about' , function (){
 
 Route::get('/contact' , function (){
 
-    return "This is Our contact Page";
+    return View::make('contact');
+});
+
+Route::post('contact', function (){
+
+    $data = Input::all();
+    $rules = array('subject' => 'required',
+                    'message' => 'required'
+                    );
+
+    $validator = Validator::make($data, $rules);
+
+    if($validator->fails()){
+        return Redirect::to('contact')->withErrors($validator)->withInput();
+
+    }
+
+    return 'your message has been sent';
+    
 });
