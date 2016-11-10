@@ -12,6 +12,7 @@
                 </p>
             </div>
         </div>
+
     </section>
 
     <div class="container">
@@ -22,32 +23,34 @@
                     Wanna learn Laravel? You've found a great way to start with.
                 </p>
             </div>
-            <div class="row">
-                <div class="showcase-box col-md-4">
-                    <div class="showcase-item">
-                        <img src="{{ asset('img/icons/icon1.png') }}" />
-                        <p>
-                            The most comprehensive book of Laravel
-                        </p>
-                    </div>
-                </div>
-                <div class="showcase-box col-md-4">
-                    <div class="showcase-item">
-                        <img src="{{ asset('img/icons/icon2.png') }}" />
-                        <p>
-                            The most comprehensive book of Laravel
-                        </p>
-                    </div>
-                </div>
-                <div class="showcase-box col-md-4">
-                    <div class="showcase-item">
-                        <img src="{{ asset('img/icons/icon3.png') }}" />
-                        <p>
-                            The most comprehensive book of Laravel
-                        </p>
-                    </div>
+
+        </section>
+        <div class="row">
+            <div class="showcase-box col-md-4">
+                <div class="showcase-item">
+                    <img src="{{ asset('img/icons/icon1.png') }}" />
+                    <p>
+                        The most comprehensive book of Laravel
+                    </p>
                 </div>
             </div>
-        </section>
+            <div class="showcase-box col-md-4">
+                <div class="showcase-item">
+                    <img src="{{ asset('img/icons/icon2.png') }}" />
+                    <p>
+                        The most comprehensive book of Laravel
+                    </p>
+                </div>
+            </div>
+            <div class="showcase-box col-md-4">
+                <div class="showcase-item">
+                    <img src="{{ asset('img/icons/icon3.png') }}" />
+                    <p>
+                        The most comprehensive book of Laravel
+                    </p>
+                </div>
+            </div>
+        </div>
+
     </div>
   @stop
