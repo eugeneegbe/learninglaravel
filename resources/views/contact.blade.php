@@ -1,9 +1,9 @@
 @extends('layout')
 @section('content')
     <h1>Contact Us.</h1>
-    <p>Please Contact us by sending a message usng the form below </p>
+    <p>Please Contact us by sending a message using the form below </p>
 {{--we will use the following code to display errors --}}
-{{--    {{ HTML::ul($errors->all(), array('class' => 'errors')) }}--}}
+    {{--{{ HTML::ul($errors->all(), array('class' => 'errors')) --}}
     <form>
         Subject<br>
         <input type="text" placeholder="Enter your subject " name="subject"><br><br>

@@ -10,19 +10,44 @@
             <link rel="stylesheet" href="{{asset('css/style.css')}}">
         </head>
         <body>
-                <div class="container col-md-8 col-md-offset-2">
-                    <nav class="navbar navbar-default" role="navigation">
-                        <div class="navbar-header">
-                            <ul class="nav navbar-nav">
-                                <li class="active"><a href="./">Home</a></li>
-                                <li><a href="./about">About</a></li>
-                                <li><a href="./contact">Contact</a></li>
-                            </ul>
-                        </div>
-                    </nav>
+        <nav class="navbar navbar-default" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-targe\
+                        t="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">L34rn1ng L4r4v3l</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Home</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="/about" class="dropdown-toggle" data-toggle="dropdown">About Us <b cl\
+                                                                                               ass="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">History </a></li>
+                            <li><a href="#">Our Experts</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <br>
+
                         {{-- we create a new content section where we will render the data --}}
                         {{-- of this page--}}
                     @yield('content')
-                </div>
+
+            </div>
         </body>
 </html>
